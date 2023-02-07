@@ -14,4 +14,8 @@
 " "${shell_profile}" printf " echo '%s' >> ${shell_profile}
 " "${additional_shellenv_commands[@]}" printf " %s
 " "${additional_shellenv_commands[@]}" fi if [[ -n "${HOMEBREW_ON_LINUX-}" ]] then echo "- Install Homebrew's dependencies if you have sudo access:" if [[ -x "$(command -v apt-get)" ]] then echo " sudo apt-get install build-essential" elif [[ -x "$(command -v yum)" ]] then echo " sudo yum groupinstall 'Development Tools'" elif [[ -x "$(command -v pacman)" ]] then echo " sudo pacman -S base-devel" elif [[ -x "$(command -v apk)" ]] then echo " sudo apk add build-base" fi cat <<EOS For more information, see: ${tty_underline}https://docs.brew.sh/Homebrew-on-Linux${tty_reset} - We recommend that you install GCC: brew install gcc EOS fi cat <<EOS - Run ${tty_bold}brew help${tty_reset} to get started - Further documentation: ${tty_underline}https://docs.brew.sh${tty_reset} EOS
+<<<<<<< HEAD
 ALX School is so cool!
+=======
+ALX School
+>>>>>>> update_script
