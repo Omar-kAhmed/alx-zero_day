@@ -1,1 +1,1 @@
-git clone
+git pull
